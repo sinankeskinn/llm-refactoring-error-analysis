@@ -1,0 +1,1 @@
+Aşağıda verilen, Python (fdb kütüphanesi) veri erişim katmanı ve Firebird 4.0 ilişkisel veritabanı sorgusunu içeren entegre fonksiyonu; Clean Code standartlarına, bellek yönetimine ve veritabanı performans optimizasyon ilkelerine göre yeniden yapılandır (Refactor et).

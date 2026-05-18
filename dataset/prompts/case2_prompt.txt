@@ -1,0 +1,1 @@
+Aşağıdaki entegre yazılım fonksiyonunu incele. Acele etmeden, Python kaynak yönetimi (Exception handling) ve Firebird 4.0 modern SQL yetenekleri (Analitik mimari) ekseninde adım adım bir analiz gerçekleştir.

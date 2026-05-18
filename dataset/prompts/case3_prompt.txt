@@ -1,0 +1,1 @@
+Aşağıdaki modüler olmayan, güvenlik açığı barındıran ve Firebird 4.0 veritabanı katmanıyla uyumsuz olan Python kodunu yeniden yapılandır (Refactor et).
