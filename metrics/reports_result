@@ -1,0 +1,359 @@
+Microsoft Windows [Version 10.0.19045.6466]
+(c) Microsoft Corporation. Tüm hakları saklıdır.
+
+C:\Windows\system32>pip install radon pylint
+Collecting radon
+  Downloading radon-6.0.1-py2.py3-none-any.whl.metadata (8.2 kB)
+Collecting pylint
+  Downloading pylint-4.0.5-py3-none-any.whl.metadata (12 kB)
+Collecting mando<0.8,>=0.6 (from radon)
+  Downloading mando-0.7.1-py2.py3-none-any.whl.metadata (7.4 kB)
+Collecting colorama>=0.4.1 (from radon)
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting astroid<=4.1.dev0,>=4.0.2 (from pylint)
+  Downloading astroid-4.0.4-py3-none-any.whl.metadata (4.4 kB)
+Collecting dill>=0.3.6 (from pylint)
+  Downloading dill-0.4.1-py3-none-any.whl.metadata (10 kB)
+Collecting isort!=5.13,<9,>=5 (from pylint)
+  Downloading isort-8.0.1-py3-none-any.whl.metadata (11 kB)
+Collecting mccabe<0.8,>=0.6 (from pylint)
+  Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+Collecting platformdirs>=2.2 (from pylint)
+  Downloading platformdirs-4.9.6-py3-none-any.whl.metadata (4.7 kB)
+Collecting tomlkit>=0.10.1 (from pylint)
+  Downloading tomlkit-0.15.0-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: six in c:\users\sinan\appdata\local\programs\python\python313\lib\site-packages (from mando<0.8,>=0.6->radon) (1.17.0)
+Downloading radon-6.0.1-py2.py3-none-any.whl (52 kB)
+Downloading pylint-4.0.5-py3-none-any.whl (536 kB)
+   ---------------------------------------- 536.7/536.7 kB 2.3 MB/s eta 0:00:00
+Downloading astroid-4.0.4-py3-none-any.whl (276 kB)
+Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading dill-0.4.1-py3-none-any.whl (120 kB)
+Downloading isort-8.0.1-py3-none-any.whl (89 kB)
+Downloading mando-0.7.1-py2.py3-none-any.whl (28 kB)
+Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+Downloading platformdirs-4.9.6-py3-none-any.whl (21 kB)
+Downloading tomlkit-0.15.0-py3-none-any.whl (41 kB)
+Installing collected packages: tomlkit, platformdirs, mccabe, mando, isort, dill, colorama, astroid, radon, pylint
+Successfully installed astroid-4.0.4 colorama-0.4.6 dill-0.4.1 isort-8.0.1 mando-0.7.1 mccabe-0.7.0 platformdirs-4.9.6 pylint-4.0.5 radon-6.0.1 tomlkit-0.15.0
+
+[notice] A new release of pip is available: 24.3.1 -> 26.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Windows\system32>radon cc "C:\Users\sinan\Desktop\TEZ\python case\case1.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case1.py
+    F 3:0 process_user_orders_v1 - A (4)
+
+C:\Windows\system32>radon cc "C:\Users\sinan\Desktop\TEZ\python case\case2.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case2.py
+    F 3:0 calculate_running_totals - A (2)
+
+C:\Windows\system32>radon cc "C:\Users\sinan\Desktop\TEZ\python case\case3.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case3.py
+    F 6:0 do_everything_about_products - A (1)
+
+C:\Windows\system32>radon mi "C:\Users\sinan\Desktop\TEZ\python case\case1.py"
+C:\Users\sinan\Desktop\TEZ\python case\case1.py - A
+
+C:\Windows\system32>radon mi "C:\Users\sinan\Desktop\TEZ\python case\case2.py"
+C:\Users\sinan\Desktop\TEZ\python case\case2.py - A
+
+C:\Windows\system32>radon mi "C:\Users\sinan\Desktop\TEZ\python case\case3.py"
+C:\Users\sinan\Desktop\TEZ\python case\case3.py - A
+
+C:\Windows\system32>radon mi "C:\Users\sinan\Desktop\TEZ\python case\case1.py" -v
+usage: radon [-h] [-v] {cc,raw,mi,hal} ...
+radon: error: unrecognized arguments: -v
+
+C:\Windows\system32>radon mi "C:\Users\sinan\Desktop\TEZ\python case\case1.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case1.py - A (87.23)
+
+C:\Windows\system32>radon mi "C:\Users\sinan\Desktop\TEZ\python case\case2.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case2.py - A (100.00)
+
+C:\Windows\system32>radon mi "C:\Users\sinan\Desktop\TEZ\python case\case3.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case3.py - A (92.47)
+
+C:\Windows\system32>pylint "C:\Users\sinan\Desktop\TEZ\python case\case1.py"
+************* Module case1
+C:\Users\sinan\Desktop\TEZ\python case\case1.py:7:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case1.py:18:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case1.py:21:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case1.py:27:33: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case1.py:30:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case1.py:31:0: C0304: Final newline missing (missing-final-newline)
+C:\Users\sinan\Desktop\TEZ\python case\case1.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+C:\Users\sinan\Desktop\TEZ\python case\case1.py:1:0: E0401: Unable to import 'fdb' (import-error)
+C:\Users\sinan\Desktop\TEZ\python case\case1.py:3:0: C0116: Missing function or method docstring (missing-function-docstring)
+C:\Users\sinan\Desktop\TEZ\python case\case1.py:26:12: W0622: Redefining built-in 'ord' (redefined-builtin)
+
+-----------------------------------
+Your code has been rated at 1.76/10
+
+
+C:\Windows\system32>pylint "C:\Users\sinan\Desktop\TEZ\python case\case2.py"
+************* Module case2
+C:\Users\sinan\Desktop\TEZ\python case\case2.py:6:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case2.py:7:0: C0301: Line too long (101/100) (line-too-long)
+C:\Users\sinan\Desktop\TEZ\python case\case2.py:15:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case2.py:22:0: C0301: Line too long (106/100) (line-too-long)
+C:\Users\sinan\Desktop\TEZ\python case\case2.py:23:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case2.py:24:0: C0304: Final newline missing (missing-final-newline)
+C:\Users\sinan\Desktop\TEZ\python case\case2.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+C:\Users\sinan\Desktop\TEZ\python case\case2.py:1:0: E0401: Unable to import 'fdb' (import-error)
+C:\Users\sinan\Desktop\TEZ\python case\case2.py:3:0: C0116: Missing function or method docstring (missing-function-docstring)
+C:\Users\sinan\Desktop\TEZ\python case\case2.py:20:11: W0718: Catching too general exception Exception (broad-exception-caught)
+C:\Users\sinan\Desktop\TEZ\python case\case2.py:3:0: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+
+-----------------------------------
+Your code has been rated at 0.00/10
+
+
+C:\Windows\system32>pylint "C:\Users\sinan\Desktop\TEZ\python case\case3.py"
+************* Module case3
+C:\Users\sinan\Desktop\TEZ\python case\case3.py:9:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case3.py:12:0: C0301: Line too long (149/100) (line-too-long)
+C:\Users\sinan\Desktop\TEZ\python case\case3.py:13:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case3.py:16:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case3.py:21:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case3.py:22:0: C0304: Final newline missing (missing-final-newline)
+C:\Users\sinan\Desktop\TEZ\python case\case3.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+C:\Users\sinan\Desktop\TEZ\python case\case3.py:1:0: E0401: Unable to import 'fdb' (import-error)
+C:\Users\sinan\Desktop\TEZ\python case\case3.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+-----------------------------------
+Your code has been rated at 0.00/10
+
+
+C:\Windows\system32>radon cc "C:\Users\sinan\Desktop\TEZ\python case\case1_result_cld\case1_result_cld.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_cld\case1_result_cld.py
+    F 64:0 _db_connection - A (4)
+    F 149:0 _build_report - A (4)
+    F 129:0 _iter_rows - A (3)
+    C 50:0 CustomerReport - A (3)
+    F 180:0 get_active_customer_order_report - A (2)
+    M 56:4 CustomerReport.total_revenue - A (2)
+    C 43:0 OrderRow - A (1)
+
+C:\Windows\system32>C:\Windows\system32>radon cc "C:\Users\sinan\Desktop\TEZ\python case\case2_result_cld\case2_result_cld.py" -s
+'C:\Windows\system32' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Windows\system32>radon cc "C:\Users\sinan\Desktop\TEZ\python case\case2_result_cld\case2_result_cld.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_cld\case2_result_cld.py
+    F 19:0 iter_running_totals - A (3)
+
+C:\Windows\system32>radon cc "C:\Users\sinan\Desktop\TEZ\python case\case3_result_cld\case3_result_cld.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_cld\case3_result_cld.py
+    F 119:0 _db_connection - A (4)
+    F 86:0 _validate_category_id - A (3)
+    F 99:0 _validate_price_filter - A (3)
+    F 107:0 _validate_page_size - A (3)
+    F 307:0 iter_all_products_by_category - A (3)
+    F 205:0 _fetch_product_rows - A (2)
+    F 246:0 get_products_by_category - A (2)
+    C 60:0 Product - A (2)
+    F 224:0 _call_inventory_log_procedure - A (1)
+    C 34:0 DatabaseConfig - A (1)
+    M 72:4 Product.from_row - A (1)
+
+C:\Windows\system32>radon cc "C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py
+    F 21:0 get_active_customer_orders_report - B (6)
+
+C:\Windows\system32>radon cc "C:\Users\sinan\Desktop\TEZ\python case\case2_result_gemn\case2_result_gemn.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gemn\case2_result_gemn.py
+    F 8:0 calculate_running_totals_v2 - A (3)
+
+C:\Windows\system32>radon cc "C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py
+    M 24:4 ProductRepository.fetch_active_products_by_category - A (4)
+    C 19:0 ProductRepository - A (3)
+    C 8:0 DatabaseManager - A (2)
+    M 54:4 ProductRepository.log_inventory_update - A (2)
+    F 70:0 process_product_pipeline - A (1)
+    M 10:4 DatabaseManager.__init__ - A (1)
+    M 15:4 DatabaseManager.get_connection - A (1)
+    M 21:4 ProductRepository.__init__ - A (1)
+
+C:\Windows\system32>radon cc "C:\Users\sinan\Desktop\TEZ\python case\case1_result_gpt\case1_result_gpt.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gpt\case1_result_gpt.py
+    F 42:0 build_report - A (3)
+    F 69:0 process_user_orders - A (2)
+    F 10:0 get_connection - A (1)
+    F 19:0 fetch_active_customer_orders - A (1)
+
+C:\Windows\system32>radon cc "C:\Users\sinan\Desktop\TEZ\python case\case2_result_gpt\case2_result_gpt.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gpt\case2_result_gpt.py
+    F 5:0 calculate_running_totals - A (5)
+
+C:\Windows\system32>radon cc "C:\Users\sinan\Desktop\TEZ\python case\case3_result_gpt\case3_result_gpt.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gpt\case3_result_gpt.py
+    F 53:0 process_products - A (5)
+    F 9:0 create_connection - A (1)
+    F 18:0 fetch_products - A (1)
+    F 45:0 update_inventory_log - A (1)
+
+C:\Windows\system32>radon mi "C:\Users\sinan\Desktop\TEZ\python case\case1_result_cld\case1_result_cld.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_cld\case1_result_cld.py - A (70.21)
+
+C:\Windows\system32>radon mi "C:\Users\sinan\Desktop\TEZ\python case\case2_result_cld\case2_result_cld.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_cld\case2_result_cld.py - A (86.55)
+
+C:\Windows\system32>radon mi "C:\Users\sinan\Desktop\TEZ\python case\case3_result_cld\case3_result_cld.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_cld\case3_result_cld.py - A (62.94)
+
+C:\Windows\system32>radon mi "C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py - A (83.77)
+
+C:\Windows\system32>radon mi "C:\Users\sinan\Desktop\TEZ\python case\case2_result_gemn\case2_result_gemn.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gemn\case2_result_gemn.py - A (100.00)
+
+C:\Windows\system32>radon mi "C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py - A (100.00)
+
+C:\Windows\system32>radon mi "C:\Users\sinan\Desktop\TEZ\python case\case1_result_gpt\case1_result_gpt.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gpt\case1_result_gpt.py - A (100.00)
+
+C:\Windows\system32>radon mi "C:\Users\sinan\Desktop\TEZ\python case\case2_result_gpt\case2_result_gpt.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gpt\case2_result_gpt.py - A (65.74)
+
+C:\Windows\system32>radon mi "C:\Users\sinan\Desktop\TEZ\python case\case3_result_gpt\case3_result_gpt.py" -s
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gpt\case3_result_gpt.py - A (100.00)
+
+C:\Windows\system32>pylint "C:\Users\sinan\Desktop\TEZ\python case\case1_result_cld\case1_result_cld.py"
+************* Module case1_result_cld
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_cld\case1_result_cld.py:237:0: C0304: Final newline missing (missing-final-newline)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_cld\case1_result_cld.py:22:0: E0401: Unable to import 'fdb' (import-error)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_cld\case1_result_cld.py:43:0: C0115: Missing class docstring (missing-class-docstring)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_cld\case1_result_cld.py:50:0: C0115: Missing class docstring (missing-class-docstring)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_cld\case1_result_cld.py:56:4: C0116: Missing function or method docstring (missing-function-docstring)
+
+-----------------------------------
+Your code has been rated at 8.78/10
+
+
+C:\Windows\system32>pylint "C:\Users\sinan\Desktop\TEZ\python case\case2_result_cld\case2_result_cld.py"
+************* Module case2_result_cld
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_cld\case2_result_cld.py:37:0: C0304: Final newline missing (missing-final-newline)
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_cld\case2_result_cld.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_cld\case2_result_cld.py:1:0: E0401: Unable to import 'fdb' (import-error)
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_cld\case2_result_cld.py:2:0: C0411: standard import "logging" should be placed before third party import "fdb" (wrong-import-order)
+
+-----------------------------------
+Your code has been rated at 5.56/10
+
+
+C:\Windows\system32>pylint "C:\Users\sinan\Desktop\TEZ\python case\case3_result_cld\case3_result_cld.py"
+************* Module case3_result_cld
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_cld\case3_result_cld.py:108:0: C0325: Unnecessary parens after 'not' keyword (superfluous-parens)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_cld\case3_result_cld.py:375:0: C0304: Final newline missing (missing-final-newline)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_cld\case3_result_cld.py:23:0: E0401: Unable to import 'fdb' (import-error)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_cld\case3_result_cld.py:72:4: C0116: Missing function or method docstring (missing-function-docstring)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_cld\case3_result_cld.py:120:4: W0621: Redefining name 'cfg' from outer scope (line 349) (redefined-outer-name)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_cld\case3_result_cld.py:246:0: R0913: Too many arguments (6/5) (too-many-arguments)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_cld\case3_result_cld.py:252:4: W0621: Redefining name 'cfg' from outer scope (line 349) (redefined-outer-name)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_cld\case3_result_cld.py:287:12: W0621: Redefining name 'products' from outer scope (line 354) (redefined-outer-name)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_cld\case3_result_cld.py:312:4: W0621: Redefining name 'cfg' from outer scope (line 349) (redefined-outer-name)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_cld\case3_result_cld.py:20:0: W0611: Unused field imported from dataclasses (unused-import)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_cld\case3_result_cld.py:21:0: W0611: Unused Sequence imported from typing (unused-import)
+
+-----------------------------------
+Your code has been rated at 8.51/10
+
+
+C:\Windows\system32>pylint "C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py"
+************* Module case1_result_gemn
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py:22:17: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py:23:25: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py:32:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py:39:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py:43:0: C0301: Line too long (104/100) (line-too-long)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py:46:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py:54:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py:57:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py:64:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py:68:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py:69:0: C0304: Final newline missing (missing-final-newline)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py:3:0: E0401: Unable to import 'fdb' (import-error)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gemn\case1_result_gemn.py:66:8: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+
+-----------------------------------
+Your code has been rated at 3.08/10
+
+
+C:\Windows\system32>pylint "C:\Users\sinan\Desktop\TEZ\python case\case2_result_gemn\case2_result_gemn.py"
+************* Module case2_result_gemn
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gemn\case2_result_gemn.py:13:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gemn\case2_result_gemn.py:24:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gemn\case2_result_gemn.py:30:79: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gemn\case2_result_gemn.py:32:43: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gemn\case2_result_gemn.py:34:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gemn\case2_result_gemn.py:40:0: C0304: Final newline missing (missing-final-newline)
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gemn\case2_result_gemn.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gemn\case2_result_gemn.py:3:0: E0401: Unable to import 'fdb' (import-error)
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gemn\case2_result_gemn.py:36:8: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gemn\case2_result_gemn.py:39:8: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+
+-----------------------------------
+Your code has been rated at 2.22/10
+
+
+C:\Windows\system32>pylint "C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py"
+************* Module case3_result_gemn
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:24:0: C0301: Line too long (126/100) (line-too-long)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:36:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:43:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:48:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:57:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:70:0: C0301: Line too long (106/100) (line-too-long)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:77:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:80:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:83:0: C0303: Trailing whitespace (trailing-whitespace)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:84:0: C0304: Final newline missing (missing-final-newline)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:3:0: E0401: Unable to import 'fdb' (import-error)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:15:4: C0116: Missing function or method docstring (missing-function-docstring)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:8:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:50:12: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:63:20: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:65:12: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gemn\case3_result_gemn.py:2:0: W0611: Unused Tuple imported from typing (unused-import)
+
+-----------------------------------
+Your code has been rated at 5.11/10
+
+
+C:\Windows\system32>pylint "C:\Users\sinan\Desktop\TEZ\python case\case1_result_gpt\case1_result_gpt.py"
+************* Module case1_result_gpt
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gpt\case1_result_gpt.py:84:0: C0304: Final newline missing (missing-final-newline)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gpt\case1_result_gpt.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+C:\Users\sinan\Desktop\TEZ\python case\case1_result_gpt\case1_result_gpt.py:3:0: E0401: Unable to import 'fdb' (import-error)
+
+-----------------------------------
+Your code has been rated at 7.50/10
+
+
+C:\Windows\system32>pylint "C:\Users\sinan\Desktop\TEZ\python case\case2_result_gpt\case2_result_gpt.py"
+************* Module case2_result_gpt
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gpt\case2_result_gpt.py:47:0: C0304: Final newline missing (missing-final-newline)
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gpt\case2_result_gpt.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gpt\case2_result_gpt.py:2:0: E0401: Unable to import 'fdb' (import-error)
+C:\Users\sinan\Desktop\TEZ\python case\case2_result_gpt\case2_result_gpt.py:5:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+-----------------------------------
+Your code has been rated at 6.00/10
+
+
+C:\Windows\system32>pylint "C:\Users\sinan\Desktop\TEZ\python case\case3_result_gpt\case3_result_gpt.py"
+************* Module case3_result_gpt
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gpt\case3_result_gpt.py:80:0: C0304: Final newline missing (missing-final-newline)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gpt\case3_result_gpt.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+C:\Users\sinan\Desktop\TEZ\python case\case3_result_gpt\case3_result_gpt.py:3:0: E0401: Unable to import 'fdb' (import-error)
+
+-----------------------------------
+Your code has been rated at 7.74/10
+
+
+C:\Windows\system32>
